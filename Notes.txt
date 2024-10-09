@@ -1,0 +1,71 @@
+Github actions:
+---------------
+=>Github actions is a powerful automation tool provideed by GitHub that enables to automate tasks related to software devlopment workflows.
+=>It allows for the creation of custom workflowss, which can be triggered by various events, such as push to a repository, pull requests or scheduled events.
+
+
+Github actions - CI/CD rules
+Github - Code repository
+Git - versio control system.
+
+Continuous Integration and Continuous Deployment
+-------------------------------------------------
+
+CI: It is a practice where developers frequently merge their code changes into a shared repo. 
+=>Each merge triggers an automated build and testing processs to ensure the changes do not break the existing functionality.
+
+CD: CD extends the concepts of CI by automating the deployment of code to production environments after it passes all required tests.
+
+            -----------
+Local----->|Github Repo|--------> |Dev|----->|QA|--------->|UAT|---------->|Production Environment|
+
+=>Workflows - Yaml
+-------------------
+=>A workflow is a series of steps, practices and tools that a developer follow to write, test collaborate on ,
+and deploy code effectively.
+
+=>This workflow is designed to stramline the SD process by reducting errors and producing high quality output.
+
+Key Stages:
+------------
+1) Coding -> Ide version -> language (pythion, js)
+2)Version control - GIT -> Manage the codebase.
+ 
+3)Code Review
+4)Testing (automated)
+5)CI
+
+
+Developer Workflow
+------------------
+=>Dev A 
+
+1)feature Developement
+---------------------
+
+                        main branch        new branch (create development in local Environment)       
+Task --------------->      
+
+2)Push and Pull request(PR):
+---------------------------
+Ocne development is done then we push it to the Remote repository.
+then we raise the pull request to merge the changes in the main branch.
+
+The tram member Review the PR for code quality, styke and other issues.
+
+
+3)Automated CI pipeline
+----------------------
+->Once a pull request is trigerred then CI pipeline is trigerred.
+->This pipeline builds the application and runs all the test cases.
+->If pipeline passes the Pipeline request is aproved and merged into the main branch.
+
+4)Continuous Deployment
+------------------------
+->Once merging the PR, a  CD pipeline is trigerred
+->The application is automatically deployed to Dev or staging environment.
+
+Github action Workflow
+----------------------
+
+Project
